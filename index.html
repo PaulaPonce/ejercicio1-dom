@@ -15,12 +15,12 @@
 	<p>Muestra aquí cuántos enlaces hay en este sitio:</p>
 	<span id="num_enlaces"></span>
 	
-	<script>
-		function mostrarEnlace(){
+	<script type="text/javascript">
+		function numeroEnlaces(){
 			var enlaces = document.getElementsByTagName("a");
-			document.getElementById("num_enlaces").innerHTML = enlaces.length;	
-		}	
-		
+			document.getElementById('num_enlaces').innerHTML = "El total de enlaces es: " + enlaces.length;	
+		}
+		numeroEnlaces();
 	</script>
 </body>
 </html>
